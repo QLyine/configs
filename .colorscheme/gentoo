@@ -1,0 +1,31 @@
+!Cursor
+URxvt.cursorColor: #232323
+URxvt*cursorBlink: true
+
+*foreground: #b8b8b8
+*background: #28222e
+
+!black
+*color0: #363636
+*color8: #323232
+!red
+*color1: #be3955
+*color9: #722334
+!green
+*color2: #7a2179
+*color10: #4d154c
+!yellow
+*color3: #7241cd
+*color11: #56319a
+!blue
+*color4: #417acf
+*color12: #386bb8
+!magenta
+*color5: #904fbe
+*color13: #754398
+!cyan
+*color6: #c998e2
+*color14: #8f6da0
+!white
+*color7: #aea4b2
+*color15: #746e76

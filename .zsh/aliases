@@ -1,0 +1,20 @@
+# Aliases, how I love thee
+alias ls="ls --color=always"
+alias reboot='sudo /sbin/reboot'
+alias ll="ls -lht"
+alias d="ls -lhtHu"
+alias pacman="sudo /usr/bin/pacman"
+alias hibernate="sudo /usr/sbin/hibernate"
+alias downUpdate="mv ~/Downloads/*.torrent ~/.rtWatch"
+alias vimonad="vim ~/.xmonad/xmonad.hs"
+alias Mplayer="~/.scripts/./mplayer.sh"
+alias shutdown="sudo shutdown -h"
+alias poweroff="sudo poweroff"
+alias genpwd="apg -n20 -a0 -m8 -x8 -Ml -y"
+alias sortPictures="/home/qlyine/.scripts/./sort_pics.py"
+alias t='todo.sh'
+alias mtmux='/usr/bin/mpd && /home/qlyine/.scripts/./tmuxgo.sh'
+alias magnet='/home/qlyine/torrents/torfiles/./magnet.sh' 
+alias update='yaourt -Syu --aur --noconfirm'
+
+alias tcpd="sudo tcpdump -lnn -ttt -i eth1"

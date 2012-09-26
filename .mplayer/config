@@ -1,0 +1,78 @@
+[default]
+# General Setup
+
+ao="alsa"
+mixer-channel="Master"
+#srate=48000
+
+#really-quiet="1" #Very very little console output
+
+# Position window. (50%:50%: center of screen)
+geometry=50%:50%
+
+vo=vdpau
+#vo=x11
+#vo=gl_sdl
+#vc=ffmpeg12vdpau,ffh264vdpau,ffvc1vdpau,ffwmv3vdpau,ffdivxvdpau,
+
+#deint=4
+
+#This sets the postprocessing into overdrive using all possible spare cpu cycles to make the movie look better
+#autoq=100
+#vf=pp=de,hqdn3d
+
+# Display Setup
+double="yes" #double buffering(recommended for subtitles)
+#monitoraspect="14:9"
+aspect=16:9
+
+# Subtitle Setup
+
+# Set subtitle alignment at its position. (2: bottom)
+subalign=2
+
+# Set font size. (2: proportional to movie width)
+subfont-autoscale=2
+subfont-osd-scale=2
+subfont-text-scale=4
+
+# Set font outline thickness. (default: 2)
+subfont-outline=2
+
+# Set autoscale coefficient. (default: 5)
+#subfont-text-scale=2.5
+
+# Set blur. (default: 2)
+subfont-blur="2"
+
+# Set font encoding.
+#subfont-encoding=unicode
+alang=English,eng,en
+slang=Portuguese,por,pt
+
+#subfont-encoding="ISO-8859-1"
+
+# Set subtitle file encoding.
+#unicode=yes
+#utf8=yes
+
+## Enable stylized fonts
+ass=yes
+embeddedfonts=yes
+
+fontconfig = yes
+
+ass-font-scale=0.95
+#ass-color=0xFFEF0026
+#ass-force-style=FontSize=30
+#ass-force-style=FontName=Verdana
+
+subcp=iso8859-1
+
+cache=8192
+cache-min=20
+
+threads=8
+
+softvol=1
+softvol-max=700

@@ -1,0 +1,609 @@
+: 1348244897:0;d
+: 1348244901:0;rm -r Alojamento\ -\ Carlos\ Ceia.docx
+: 1348244903:0;d
+: 1348244906:0;d wormhole
+: 1348244912:0;rm -r wormhole
+: 1348244963:0;yaourt -Syu --aur
+: 1348244974:0;mkdir projects
+: 1348244975:0;cd projects
+: 1348244980:0;mkdir fcsh
+: 1348244981:0;cd fcsh
+: 1348244993:0;mkdir xls_translate
+: 1348245061:0;d
+: 1348245068:0;cd
+: 1348245069:0;cd Downloads
+: 1348245069:0;d
+: 1348245074:0;cat RH_FCSH_120907b.csv
+: 1348245817:0;cat RH_FCSH_120907b_RH.csv
+: 1348245828:0;cat RH_FCSH_120907b_RH.csv | awk '{print $1}'
+: 1348245830:0;cat RH_FCSH_120907b_RH.csv | awk '{print $3}'
+: 1348246085:0;cat RH_FCSH_120907b_RH.csv 
+: 1348246187:0;cut -d, -f3
+: 1348246195:0;cut -d, -f3 RH_FCSH_120907b_RH.csv
+: 1348246230:0;for i in `cut -d, -f3 RH_FCSH_120907b_RH.csv`; do echo $i; done
+: 1348246383:0;while read line; do; echo $line; done
+: 1348246412:0;cut -d, -f3 RH_FCSH_120907b_RH.csv | while read line; do; echo $i; done
+: 1348246427:0;cut -d, -f3 RH_FCSH_120907b_RH.csv
+: 1348246599:0;7z x ~/Downloads/HugoDaniel-FCSH-Cards-59e5572.zip
+: 1348246600:0;d
+: 1348246607:0;cd xls_translate
+: 1348246613:0;mv ../HugoDaniel-FCSH-Cards-59e5572 .
+: 1348246614:0;d HugoDaniel-FCSH-Cards-59e5572
+: 1348246651:0;xsel 
+: 1348246657:0;pwd | xsel
+: 1348246658:0;/home/qlyine/projects/fcsh/xls_translate
+: 1348246665:0;vim HugoDaniel-FCSH-Cards-59e5572/Main.hs
+: 1348246675:0;vim Main.hs
+: 1348246882:0;cd
+: 1348246886:0;cd Downloads
+: 1348246896:0;cd -
+: 1348246905:0;cut -d, -f3 RH_FCSH_120907b_RH.csv | while read -r line; do; echo $i; done
+: 1348246994:0;cut -d, -f3 RH_FCSH_120907b_RH.csv >| file.txt
+: 1348246996:0;cat file.txt
+: 1348247053:0;cut -d; -f3 RH_FCSH_120907b_RH.csv >| file.txt
+: 1348247059:0;cut -d";" -f3 RH_FCSH_120907b_RH.csv >| file.txt
+: 1348247064:0;cat file.txt
+: 1348247110:0;while read -r line; do echo "$line"; done < file.txt
+: 1348247130:0;while read -r line; do echo "$line"; done < file.txt | wc -l
+: 1348247138:0;cat file.txt | wc -l
+: 1348247257:0;cd -
+: 1348247259:0;cd -
+: 1348247262:0;cd -
+: 1348247272:0;pwd | xsel
+: 1348247273:0;/home/qlyine/projects/fcsh/xls_translate
+: 1348247275:0;cd
+: 1348247276:0;cd -
+: 1348247480:0;vim Main.hs
+: 1348247484:0;vim HugoDaniel-FCSH-Cards-59e5572/Main.hs
+: 1348247961:0;cd 
+: 1348248002:0;cd projects/fcsh/xls_translate
+: 1348248002:0;d
+: 1348248011:0;vim HugoDaniel-FCSH-Cards-59e5572/DataType.hs
+: 1348248262:0;cd projects/fcsh/xls_translate
+: 1348248262:0;d
+: 1348248268:0;d HugoDaniel-FCSH-Cards-59e5572
+: 1348248287:0;yaourt -S cabal 
+: 1348248300:0;fcshproxy
+: 1348248303:0;yaourt -S cabal
+: 1348248320:0;yaourt -Ss cabal 
+: 1348248329:0;yaourt -S extra/cabal-install
+: 1348248397:0;cabal update && cabal install 
+: 1348248456:0;cd projects/fcsh/xls_translate
+: 1348248456:0;d
+: 1348248458:0;cd HugoDaniel-FCSH-Cards-59e5572
+: 1348248459:0;d
+: 1348248465:0;cabal cartoes.cabal
+: 1348248480:0;cabal install cartoes.cabal
+: 1348248495:0;cabal install Data.CSV
+: 1348248608:0;cabal install CSV
+: 1348248638:0;cabal install csv-enumerator
+: 1348249589:0;cd
+: 1348249591:0;d Downloads
+: 1348250007:0;ghc --rechek
+: 1348250020:0;ghc-pkg 
+: 1348250039:0;ghc-pkg --user | grep -i Data
+: 1348250042:0;ghc-pkg --user 
+: 1348250054:0;ghc-pkg list
+: 1348250059:0;ghc-pkg list | grep -i Data
+: 1348250087:0;ghc-pkg 
+: 1348250120:0;ghc-pkg update
+: 1348250193:0;cd Downloads
+: 1348250194:0;d
+: 1348250199:0;ghci 
+: 1348250298:0;cat  Downloads/RH_FCSH_120907b_RH.csv
+: 1348250490:0;cat  Downloads/RH_FCSH_120907b_RH.csv | head
+: 1348251800:0;cabal install csv-conduit
+: 1348252231:0;hibernate
+: 1348253469:0;77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777778/77
+: 1348253491:0;nvidia-settings
+: 1348254090:0;cd  projects/fcsh/xls_translate
+: 1348254096:0;ghci
+: 1348254247:0;vimonad
+: 1348254431:0;ghci 
+: 1348255772:0;cp ~/Downloads/RH_FCSH_120907b.csv 0
+: 1348255778:0;cp ~/Downloads/RH_FCSH_120907b.csv .
+: 1348255781:0;rm -r 0
+: 1348255782:0;d
+: 1348255800:0;ghci
+: 1348256448:0;Mplayer ~/Alan_Watts_-_The_Cosmos-8YdDLHrMMzs.mp4
+: 1348270837:0;cat .xinitrc
+: 1348270845:0;Font="Bitstream Vera Sans:Roman:pixelsize=11"
+: 1348270850:0;BG="black"
+: 1348270855:0;conky | dzen2 -w 1320 -sa -c -fn $Font -ta r -h 16 -bg $BG &
+: 1348270926:0;yaourt -Syu
+: 1348271674:0;mtmux
+: 1348274415:0;yaourt -Syu --aur
+: 1348275169:0;hibernate
+: 1348307813:0;wicd-curses
+: 1348309340:0;cd ghci
+: 1348309349:0;Downloads
+: 1348309353:0;ghci 
+: 1348309806:0;hibernate
+: 1348443329:0;cd projects
+: 1348443330:0;d
+: 1348443333:0;cd fcsh
+: 1348443333:0;d
+: 1348443335:0;cd xls_translate
+: 1348443338:0;vim Main.hs
+: 1348443448:0;cd
+: 1348443450:0;cd projects/fcsh/xls_translate
+: 1348443451:0;d
+: 1348443455:0;ghc
+: 1348443459:0;ghci 
+: 1348443542:0;cd projects/fcsh/xls_translate/
+: 1348443549:0;cd projects
+: 1348443551:0;cd fcsh/xls_translate/HugoDaniel-FCSH-Cards-59e5572
+: 1348443555:0;vim Main.hs
+: 1348443724:0;d
+: 1348443959:0;cd projects/fcsh/xls_translate
+: 1348443961:0;cd HugoDaniel-FCSH-Cards-59e5572
+: 1348443963:0;vim DataType.hs
+: 1348445509:0;cd projects/fcsh/xls_translate/HugoDaniel-FCSH-Cards-59e5572
+: 1348445515:0;vim Printer.hs
+: 1348445605:0;cabal install either-utils
+: 1348447765:0;ghc Main.hs
+: 1348447782:0;./Main RH_FCSH_120907b.csv
+: 1348447786:0;./Main RH_FCSH_120907b.csv RH_FCSH_120907b.csv
+: 1348448440:0;cd Downloads
+: 1348448454:0;libreoffice RH_FCSH_120907b.xlsx
+: 1348450765:0;cd .scripts
+: 1348450768:0;./tmuxgo.sh
+: 1348452003:0;cd
+: 1348452007:0;vim Test.hs
+: 1348453890:0;cd projects/fcsh/xls_translate
+: 1348453896:0;ghc Main.hs
+: 1348453952:0;./Main ~/Downloads/RH_FCSH_120907b.csv RH_FCSH_120907b.csv
+: 1348453969:0;cat RH_FCSH_120907b.csv
+: 1348453982:0;cat ~/Downloads/RH_FCSH_120907b.csv
+: 1348453989:0;cat ~/Downloads/RH_FCSH_120907b_RH.csv
+: 1348454011:0;./Main ~/Downloads/RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv
+: 1348454487:0;cd
+: 1348454489:0;vim Test.hs
+: 1348454572:0;cd projects/fcsh/xls_translate
+: 1348454587:0;cd -
+: 1348454589:0;./Main ~/Downloads/RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv
+: 1348454655:0;ghci
+: 1348454707:0;./Main ~/Downloads/RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv
+: 1348454992:0;cp ~/Downloads/RH_FCSH_120907b_RH.csv .
+: 1348454997:0;./Main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv
+: 1348455003:0;d
+: 1348455628:0;./Main RH_FCSH_120907b.csv RH_FCSH_120907b.csv
+: 1348455639:0;./Main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv
+: 1348455678:0;ghc Main.hs -o main
+: 1348455688:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv
+: 1348455708:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv >| result.txt
+: 1348455710:0;cat result.txt
+: 1348455715:0;cat result.txt | wc -l
+: 1348455733:0;cat RH_FCSH_120907b_RH.csv | wc -l
+: 1348455761:0;ghc Main.hs -o main
+: 1348455766:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv >| result.txt
+: 1348455772:0;cat RH_FCSH_120907b_RH.csv | wc -l
+: 1348455775:0;cat result.txt | wc -l
+: 1348455796:0;ghc Main.hs -o main
+: 1348455801:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv >| result.txt
+: 1348455804:0;cat result.txt | wc -l
+: 1348455808:0;ghc Main.hs -o main
+: 1348455814:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv >| result.txt
+: 1348455820:0;cat result.txt | wc -l
+: 1348455850:0;cat RH_FCSH_120907b.csv| wc -l
+: 1348455857:0;cat RH_FCSH_120907b_RH.csv | wc -l
+: 1348455881:0;cat result.txt
+: 1348455958:0;ghc Main.hs -o main
+: 1348455988:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv >| result.txt
+: 1348455990:0;cat result.txt
+: 1348455994:0;cat result.txt | grep -i "#"
+: 1348456006:0;cat result.txt | wc -l
+: 1348456111:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b_RH.csv
+: 1348456133:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b_RH.csv | wc -l
+: 1348456203:0;ghc Main.hs -o main
+: 1348456281:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv
+: 1348456297:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv
+: 1348456303:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv | wc -l
+: 1348456315:0;./main RH_FCSH_120907b.csv RH_FCSH_120907b.csv | wc -l
+: 1348456321:0;./main RH_FCSH_120907b.csv RH_FCSH_120907b_RH.csv | wc -l
+: 1348456335:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv | wc -l
+: 1348456362:0;ghc Main.hs -o main
+: 1348456375:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv | wc -l
+: 1348456450:0;ghc Main.hs -o main
+: 1348456452:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv | wc -l
+: 1348456457:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv 
+: 1348456589:0;ghc Main.hs -o main
+: 1348456619:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv 
+: 1348456726:0;cat RH_FCSH_120907b.csv
+: 1348456754:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv >| result.txt
+: 1348456761:0;cat result.txt | wc -l
+: 1348456766:0;hibernate
+: 1348487957:0;cp Main.hs test.hs
+: 1348487960:0;vim test.hs
+: 1348489346:0;vim Test.hs
+: 1348489524:0;cd
+: 1348489526:0;ghci
+: 1348490220:0;./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv >| result.txt
+: 1348490224:0;cat result.txt
+: 1348490227:0;cat result.txt | wc -l
+: 1348490237:0;ghc test.hs -o test
+: 1348490249:0;./test RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv >| result.txt
+: 1348490252:0;cat result.txt
+: 1348490284:0;./test RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv >| result.txt
+: 1348490286:0;ghc test.hs -o test
+: 1348490355:0;./test RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv >| result.txt
+: 1348490356:0;cat result.txt
+: 1348490360:0;cat result.txt | wc -l
+: 1348490380:0;ghc test.hs -o test
+: 1348490385:0;hibernate
+: 1348492314:0;wicd-curses
+: 1348492341:0;ghc test.hs -o test
+: 1348492356:0;time ./test RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv 
+: 1348492367:0;time ./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv 
+: 1348492371:0;time ./test RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv 
+: 1348492383:0;time ./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv 
+: 1348492385:0;time ./test RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv 
+: 1348492529:0;ghc test.hs -o test
+: 1348492532:0;time ./test RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv 
+: 1348492606:0;time ./main RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv 
+: 1348492613:0;time ./test RH_FCSH_120907b_RH.csv RH_FCSH_120907b.csv 
+: 1348492683:0;wicd-curses
+: 1348492785:0;sudo mount /dev/sdb /mnt
+: 1348492798:0;sudo fdisk -l
+: 1348492805:0;sudo mount /dev/sdb1 /mnt
+: 1348492809:0;d /mnt
+: 1348492818:0;d /mnt/bouncycastle
+: 1348492831:0;d
+: 1348492836:0;d /mnt
+: 1348492849:0;cd uniWorkspace/
+: 1348492872:0;mkdir ssrc 
+: 1348492875:0;cd ssrc
+: 1348492887:0;cp -r /mnt/* .
+: 1348492893:0;acpi
+: 1348492903:0;sudo umount /mnt
+: 1348492924:0;d
+: 1348492937:0;7z x UnlimitedJCEPolicyJDK7.zip
+: 1348492938:0;d
+: 1348492941:0;cd un
+: 1348492942:0;cd UnlimitedJCEPolicy
+: 1348492943:0;d
+: 1348492947:0;cat README.txt
+: 1348492992:0;cd
+: 1348493050:0;cd uniWorkspace/ssrc
+: 1348493050:0;d
+: 1348493052:0;cd bouncycastle
+: 1348493053:0;d
+: 1348493288:0;vim ~/Test.hs
+: 1348493458:0;cd -
+: 1348493473:0;cat RH_FCSH_120907b.csv
+: 1348493478:0;cat RH_FCSH_120907b.csv | grep -i 
+: 1348493481:0;cat RH_FCSH_120907b.csv | wc -l
+: 1348493486:0;hibernate
+: 1348494211:0;ip route
+: 1348494451:0;cd
+: 1348494515:0;cd uniWorkspace/ssrc
+: 1348494519:0;pwd | xsel
+: 1348494556:0;cd workspace/Hello\ World
+: 1348494556:0;d
+: 1348494559:0;cd src
+: 1348494560:0;vim Main.scala
+: 1348495000:0;cd
+: 1348495009:0;cd Documents/uniDocs
+: 1348495010:0;d
+: 1348495012:0;cd scala
+: 1348495016:0;zathura ScalaByExample.pdf &
+: 1348495296:0;scala
+: 1348496071:0;d
+: 1348496073:0;cd
+: 1348496130:0;cd uniWorkspace/ssrc
+: 1348496131:0;d
+: 1348496188:0;yaourt -S jdk
+: 1348496210:0;cd
+: 1348496212:0;cd .compile/
+: 1348496215:0;yaourt -G jdk
+: 1348496218:0;cd jdk
+: 1348496221:0;makepkg -i
+: 1348497153:0;yaourt -S ethtool
+: 1348497169:0;ethtool eth0
+: 1348497184:0;sudo ethtool eth0
+: 1348497202:0;wicd-curses
+: 1348497460:0;cd
+: 1348497464:0;cd uniWorkspace/ssrc/UnlimitedJCEPolicy
+: 1348497467:0;cat README.txt
+: 1348497471:0;echo $JAVA_HOME
+: 1348497496:0;cp local_policy.jar US_export_policy.jar $JAVA_HOME
+: 1348497523:0;cd $JAVA_HOME
+: 1348497524:0;d
+: 1348497532:0;d jre 
+: 1348497538:0;fid jre
+: 1348497542:0;fid jdk
+: 1348497552:0;sudo cp local_policy.jar US_export_policy.jar $JAVA_HOME
+: 1348497561:0;sudo cp local_policy.jar US_export_policy.jar /opt/java/jre
+: 1348497570:0;cat README.txt
+: 1348497573:0;d
+: 1348497577:0;d bin
+: 1348497581:0;d
+: 1348497594:0;d jre
+: 1348497603:0;fid local_policy.jar
+: 1348497643:0;cp local_policy.jar jre/lib/security
+: 1348497646:0;sudo cp local_policy.jar jre/lib/security
+: 1348497655:0;fid US_export_policy.jar
+: 1348497671:0;sudo cp US_export_policy.jar jre/lib/security
+: 1348497675:0;fid US_export_policy.jar
+: 1348497976:0;cd src/ex1
+: 1348497976:0;d
+: 1348497983:0;mv ~/Downloads/*.java .
+: 1348497984:0;d
+: 1348498465:0;cd
+: 1348498467:0;cd
+: 1348498477:0;yaourt -Syu --aur
+: 1348499958:0;wicd-curses
+: 1348499962:0;mtmux
+: 1348499971:0;wicd-curses
+: 1348500338:0;cd uniWorkspace/ssrc
+: 1348500339:0;d
+: 1348500342:0;d bouncycastle
+: 1348500457:0;cd uniWorkspace/ssrc/
+: 1348500458:0;d
+: 1348500461:0;cd bouncycastle
+: 1348500464:0;man wget
+: 1348500476:0;wget --continue "http://downloads.bouncycastle.org/java/bcprov-ext-jdk15on-147.jar"
+: 1348500550:0;d
+: 1348500574:0;sudo cp bcprov-ext-jdk15on-147.jar $JAVA_HOME/jre/lib/ext
+: 1348500624:0;sudo vim $JAVA_HOME/jre/lib/security/java.security
+: 1348500665:0;cd
+: 1348501166:0;d Downloads
+: 1348501175:0;cd Downloads
+: 1348501179:0;rm -r bcprov-ext-jdk15on-147.jar.part
+: 1348501182:0;cat file.txt
+: 1348501185:0;rm -r file.txt
+: 1348501186:0;d
+: 1348501190:0;rm -r HugoDaniel-FCSH-Cards-59e5572.zip
+: 1348501198:0;rm -r tp1.zip
+: 1348501200:0;d
+: 1348501232:0;cd 
+: 1348501236:0;cd uniWorkspace/ssrc/src
+: 1348501237:0;d
+: 1348501240:0;cd ex2
+: 1348501241:0;d
+: 1348501247:0;mv ~/Downloads/*.java .
+: 1348501247:0;d
+: 1348501251:0;cd ..
+: 1348501387:0;wicd-curses
+: 1348501858:0;vimonad
+: 1348502009:0;yaourt -Qi gedit
+: 1348502040:0;cat .xmonad/xmonad.errors
+: 1348502322:0;ALSAMI
+: 1348502325:0;alsamixer
+: 1348502495:0;youtube-dl -t "https://www.youtube.com/watch?v=swi3AKHCKEY"
+: 1348502506:0;wicd-curses
+: 1348503142:0;cd bin
+: 1348503142:0;d
+: 1348503155:0;java ex2.SimpleSymmetricBC
+: 1348503162:0;java ex2.SimpleSymmetricExample
+: 1348503265:0;java ex2.SimpleSymmetricPaddingExample
+: 1348503269:0;java ex2.SimpleSymmetricPaddingExample2
+: 1348503808:0;d
+: 1348503811:0;d Downloads/
+: 1348503819:0;zathura Downloads/RealWorldHaskell.pdf 6
+: 1348503827:0;zathura Downloads/RealWorldHaskell.pdf &
+: 1348504843:0;cd Downloads; youtube-dl -t "https://www.youtube.com/watch?v=swi3AKHCKEY"
+: 1348505102:0;date
+: 1348505109:0;cat .xinitrc
+: 1348505117:0;Font="Bitstream Vera Sans:Roman:pixelsize=11"
+: 1348505127:0;BG="black"
+: 1348505135:0;conky | dzen2 -w 1320 -sa -c -fn $Font -ta r -h 16 -bg $BG &
+: 1348505157:0;cd ~/uniWorkspace/ssrc/src
+: 1348505159:0;cd ..
+: 1348505179:0;tar -xjvf ~/Downloads/commons-net-3.1-bin.tar.gz .
+: 1348505184:0;tar -xzvf ~/Downloads/commons-net-3.1-bin.tar.gz .
+: 1348505283:0;tar -zxvf ~/Downloads/commons-net-3.1-bin.tar.gz .
+: 1348505287:0;tar -zxvf ~/Downloads/commons-net-3.1-bin.tar.gz 
+: 1348505288:0;d
+: 1348505293:0;rm -r commons-net-3.1
+: 1348505307:0;tar -zxvf ~/Downloads/commons-net-3.1-bin.tar.gz 
+: 1348505309:0;d
+: 1348505311:0;d commons-net-3.1
+: 1348505539:0;vim TFTPExample.java
+: 1348505569:0;hibernate
+: 1348508912:0;alsamixer
+: 1348508917:0;d
+: 1348508925:0;Mplayer Borderlands_2_-_Zero_Assassin_Melee_build-swi3AKHCKEY.mp4.part
+: 1348509010:0;d
+: 1348509017:0;Mplayer A_História_da_Sua_Escravidão_The_Story_of_Your_Enslavement_in_Portuguese-BYTre11qwFk.flv
+: 1348509865:0;Mplayer Culture_in_Decline_Episode_1_What_Democracy_by_Peter_Joseph-bTbLslkIR2k.mp4
+: 1348510256:0;hibernate
+: 1348527857:0;wicd-curses
+: 1348574389:0;cd 
+: 1348574397:0;cd uniWorkspace/ssrc/bin
+: 1348574405:0;java ex2.TFTP
+: 1348574594:0;cd Downloads
+: 1348574594:0;d
+: 1348574601:0;cat TFTPExample.java
+: 1348574604:0;cat TFTPExample.java | xsel
+: 1348574611:0;cat TFTPExample.java | xsel -b
+: 1348576833:0;cd bin
+: 1348576844:0;echo "abc" >| myfile
+: 1348576860:0;java ex2.myFileInputStream myfile
+: 1348576958:0;acpi
+: 1348577597:0;hibernate
+: 1348578460:0;cd pro
+: 1348578462:0;cd 
+: 1348578464:0;cd projects
+: 1348578466:0;cd fcsh/xls_translate
+: 1348578471:0;vim test.hs
+: 1348579996:0;qsynergy &
+: 1348580027:0;nvidia-settings
+: 1348580070:0;setxkbmap pt
+: 1348580073:0;ssh -D 1080 -NCf daniel@media
+: 1348581120:0;cd
+: 1348581121:0;cd
+: 1348581122:0;cd
+: 1348581124:0;fcshproxy
+: 1348581129:0;yaourt -Syu --aur
+: 1348581438:0;yaourt -Rdd nvidia-pf
+: 1348581894:0;cd .compile
+: 1348581897:0;yaourt -G nvidia-pf
+: 1348581909:0;fcshproxy
+: 1348581914:0;yaourt -G nvidia-pf
+: 1348581917:0;cd nvidia-pf/
+: 1348581919:0;vim PKGBUILD
+: 1348582104:0;yaourt -Qi nvidia-utils
+: 1348582152:0;makepkg -i
+: 1348582254:0;md5sum NVIDIA-Linux-x86_64-304.51-no-compat32.run
+: 1348582262:0;vim PKGBUILD
+: 1348582290:0;makepkg -i
+: 1348588303:0;cd
+: 1348588314:0;youtube-dl -t --extract-audio "https://www.youtube.com/watch?v=dOFXDU9lxXU&feature=BFa&list=UU5nc_ZtjKW1htCVZVRxlQAQ"
+: 1348588345:0;mplayer Sorrow_-_My_Love-dOFXDU9lxXU.aac
+: 1348588354:0;alsamixer
+: 1348591782:0;cd /var/lib/pacman/local
+: 1348591783:0;d
+: 1348591787:0;d nvidia*
+: 1348591800:0;startx
+: 1348591833:0;cd ..
+: 1348591834:0;d
+: 1348591836:0;cd sync
+: 1348591838:0;cd
+: 1348591843:0;cd /var/cache/pacman
+: 1348591844:0;d
+: 1348591846:0;cd pkg
+: 1348591849:0;d nvidia*
+: 1348591879:0;sudo pacman -U nvidia-utils-304.43-1-x86_64.pkg.tar.xz
+: 1348591897:0;yaourt -Rd nvidia-pf
+: 1348591944:0;yaourt -Qi nvidia-utils
+: 1348591954:0;cd /etc/modprobe.d
+: 1348591966:0;lsmod| nveaou
+: 1348591971:0;lsmod| neveau
+: 1348591978:0;lsmod| grep -i nove
+: 1348591982:0;lsmod| grep -i au
+: 1348592001:0;cd .compile/
+: 1348592002:0;d
+: 1348592005:0;cd nvidia-pf
+: 1348592005:0;d
+: 1348592021:0;yaourt -U nvidia-pf-304.51-1-x86_64.pkg.tar.xz
+: 1348592032:0;cd
+: 1348592036:0;cd .compile/nvidia-pf
+: 1348592037:0;d
+: 1348592039:0;cat nvidia.install
+: 1348592049:0;cat PKGBUILD
+: 1348592074:0;makepkg -i
+: 1348592123:0;cat /etc/modprobe.d/broadcom-wl.conf
+: 1348592135:0;cat pkg/usr/lib/modprobe.d/nvidia-pf.conf
+: 1348592157:0;sudo cp -r pkg/usr/lib/modprobe.d/nvidia-pf.conf /etc/modprobe.d
+: 1348592195:0;vim PKGBUILD
+: 1348592240:0;sudo makepkg -i
+: 1348592245:0;sudo makepkg -i --asroot
+: 1348592280:0;fid / extra
+: 1348592285:0;sudo fid / extra
+: 1348592310:0;sudo find / -iname *extramodules*
+: 1348592314:0;sudo find / -iname "*extramodules*"
+: 1348592339:0;cd
+: 1348592354:0;fid Sorrow
+: 1348592381:0;cat /usr/lib/modprobe.d/
+: 1348592385:0;cat /usr/lib/modprobe.d/nvidia-pf.conf
+: 1348592412:0;mplayer Sorrow_-_My_Love-dOFXDU9lxXU.aac
+: 1348592424:0;startx
+: 1348592438:0;d /etc/X11/xorg.conf.d
+: 1348592447:0;sudo reboot
+: 1348592517:0;cat .xinitrc
+: 1348592521:0;Font="Bitstream Vera Sans:Roman:pixelsize=11"
+: 1348592526:0;BG="black"
+: 1348592538:0;conky | dzen2 -w 1320 -sa -c -fn $Font -ta r -h 16 -bg $BG &
+: 1348592559:0;mplayer Sorrow_-_My_Love-dOFXDU9lxXU.aac
+: 1348592562:0;alsamixer
+: 1348593213:0;mtmux
+: 1348593222:0;cd uniWorkspace/ssrc/bin
+: 1348593222:0;d
+: 1348593246:0;echo "adbcefghik" >>| ../myfile.txt
+: 1348593261:0;java ex2.SimpleSymmetricBC ../myfile.txt
+: 1348593277:0;java ex2.myFileInputStream ../myfile.txt
+: 1348594993:0;hibernate
+: 1348649548:0;wicd-curses
+: 1348649561:0;ifconfig
+: 1348649605:0;sudo vim /etc/udev/rules.d/10-network.rules
+: 1348649633:0;reboot
+: 1348649698:0;cat .xinitrc
+: 1348649704:0;Font="Bitstream Vera Sans:Roman:pixelsize=11"
+: 1348649708:0;BG="black"
+: 1348649714:0;conky | dzen2 -w 1320 -sa -c -fn $Font -ta r -h 16 -bg $BG &
+: 1348649722:0;mtmux
+: 1348649727:0;wicd-curses
+: 1348650751:0;youtube-dl -t "http://blog.ted.com/2012/09/25/further-reading-in-github/"
+: 1348651175:0;git clone http://am.lcs.mit.edu/6.824-2010/yfs-class.git
+: 1348651277:0;hibernate
+: 1348657715:0;cd uniWorkspace
+: 1348657762:0;cd ssrc/bin
+: 1348657766:0;java ex2.myFileInputStream ../myfile.txt
+: 1348659497:0;vim ../myfile.txt
+: 1348659513:0;java ex2.myFileInputStream ../myfile.txt
+: 1348659708:0;vim ../myfile.txt
+: 1348659893:0;java ex2.myFileInputStream ../myfile.txt
+: 1348660405:0;hibernate
+: 1348661611:0;ifconfig
+: 1348661621:0;wicd-curses
+: 1348661642:0;java ex2.myFileInputStream ../myfile.txt
+: 1348661924:0;ssh -D 1080 -NCf daniel@media
+: 1348661941:0;fcshproxy
+: 1348661946:0;yaourt -Syu --aur
+: 1348661956:0;cd Downloads
+: 1348661962:0;nvidia-settings
+: 1348662059:0;qsynergy &
+: 1348662098:0;wicd-curses
+: 1348662189:0;mplayer Sorrow_-_My_Love-dOFXDU9lxXU.aac
+: 1348662214:0;setxkbmap pt
+: 1348662952:0;mplayer Downloads/ClayShirky_2012G-480p.mp4
+: 1348664503:0;update
+: 1348664855:0;mplayer Sorrow_-_My_Love-dOFXDU9lxXU.aac
+: 1348668260:0;alsamixer
+: 1348668280:0;ssh root@lb01
+: 1348668304:0;cat hugo/eru
+: 1348668306:0;cat hugo/eurotux.web01
+: 1348668568:0;ssh root@10.0.0.11
+: 1348669206:0;mplayer Sorrow_-_My_Love-dOFXDU9lxXU.aac
+: 1348670249:0;sudo kvpnc
+: 1348670444:0;yaourt -S pppd
+: 1348670513:0;whereis pppd
+: 1348670592:0;cd /etc/ppp
+: 1348670592:0;d
+: 1348670600:0;vim options.pptp
+: 1348670632:0;sudo vim chap-secrets
+: 1348670651:0;sudo vim peers/kvpnc.OracleVM
+: 1348670690:0;sudo vim chap-secrets
+: 1348670799:0;sudo vim peers/kvpnc.OracleVM
+: 1348670850:0;pon kvpnc.OracleVM
+: 1348670855:0;sudo pon kvpnc.OracleVM
+: 1348670891:0;sudo pon kvpnc.OracleVM dump logfd 2 nodetach
+: 1348670978:0;sudo vim peers/kvpnc.OracleVM
+: 1348670983:0;sudo vim chap-secrets
+: 1348671009:0;sudo pon kvpnc.OracleVM dump logfd 2 nodetach
+: 1348671026:0;sudo modprobe ppp_mppe
+: 1348671028:0;sudo pon kvpnc.OracleVM dump logfd 2 nodetach
+: 1348671056:0;sudo vim peers/kvpnc.OracleVM
+: 1348671083:0;sudo vim chap-secrets
+: 1348671094:0;sudo pon kvpnc.OracleVM dump logfd 2 nodetach
+: 1348671136:0;sudo vim chap-secrets
+: 1348671144:0;sudo pon kvpnc.OracleVM dump logfd 2 nodetach
+: 1348671155:0;ls -lh
+: 1348671375:0;sudo vim chap-secrets
+: 1348671387:0;sudo vim peers/kvpnc.OracleVM
+: 1348671398:0;sudo vim chap-secrets
+: 1348671415:0;sudo pon kvpnc.OracleVM dump logfd 2 nodetach
+: 1348671450:0;sudo ip route add 192.168.1.0/24 dev ppp0
+: 1348671503:0;ip route
+: 1348672804:0;sudo ip route add 192.168.1.0/24 dev ppp0
+: 1348672851:0;ip route
+: 1348673494:0;fcshproxy
+: 1348673497:0;yaourt -Syu --aur
+: 1348673553:0;cd
+: 1348673986:0;git init
+: 1348674045:0;git config --global user.name "QLyine"
+: 1348674059:0;git config --global user.email "noghost.sac@gmail.com"
+: 1348674077:0;git config --global credential.helper cache
+: 1348674138:0;cat .ssh/known_hosts
+: 1348674146:0;cat .ssh/id_rsa.pub| xsel
+: 1348674236:0;git remote add origin git@github.com:QLyine/configs.git
+: 1348674274:0;cd
+: 1348674279:0;d .vimperator
+: 1348674281:0;d .vimperator/colors
+: 1348674289:0;d .vimperator/info
+: 1348674290:0;d .vimperator/info/default
+: 1348674295:0;d .vimperator/info/default/ignored-keys
+: 1348674297:0;cat .vimperator/info/default/ignored-keys
+: 1348674306:0;cat .vimperator/info/default/history-command
+: 1348674320:0;ga .zshrc .zsh .mplayer/config .colorscheme .vimrc .vimperatorrc .vimperator/colors 

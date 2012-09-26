@@ -1,0 +1,42 @@
+" Global Settings
+"set nobeep
+set guioptions+=b
+
+"" hints
+"" set followhints=1
+"" set hintmatching=custom 
+
+"" For Search
+set ic
+set hlsearch
+set defsearch=google
+
+"" for completion
+set complete=sl
+set suggestengines=google
+set wildoptions=auto
+set history=100
+set nopreload 
+
+
+colorscheme bigchu-mini
+"colorscheme mac
+
+" Tab mappings
+map <S-Up> :tabclose<CR>
+map <S-Down> :tabnew<CR>
+"map <S-Left> gT
+map <S-j> gT
+map <S-k> gt
+map <C-k> <C-b>
+map <C-j> <C-f>
+map <S-PageUp> :tabfirst<CR>
+map <S-PageDown> :tablast<CR>
+
+" Abreviations
+cabbrev tn tabnew
+cabbrev tb tabopen
+cabbrev yt http://www.youtube.com
+cabbrev gi http://images.google.com
+cabbrev ad http://anidb.net/perl-bin/animedb.pl?show=main
+

@@ -1,0 +1,128 @@
+# from meqif's zsh 
+# Simple and functional todo manager
+
+function todo()
+{
+  TODO="$HOME/.TODO"
+  case "$1" in
+    ""|ls|list)
+      awk '{count++; print "["count"]" " " $0 }' $TODO;;
+    add|a|+)
+      echo "$*[2,-1]" >> $TODO;;
+    del|delete|d)
+      awk '{ if(++h!='"$*[2]"') print $0}' $TODO > /tmp/TODO.tmp; mv /tmp/TODO.tmp $TODO;;
+  esac
+}
+
+function tma()
+{
+  todo.sh add "@Music $*"
+}
+
+function tml()
+{
+  todo.sh ls @Music
+}
+
+# Set off X ScreenSaver for an amount of time
+
+function noxsaver()
+{
+    echo "turning off xsceensaver and dpms"
+    xset s off -dpms
+
+    echo "sleeping for $1..."
+    sleep $1
+
+    echo "back on :)"
+    xset s on +dpms
+
+}
+
+function fcshproxy()
+{
+  export http_proxy="http://proxy.fcsh.unl.pt:3128"
+  export https_proxy="http://proxy.fcsh.unl.pt:3128"
+  export ftp_proxy="http://proxy.fcsh.unl.pt:3128"
+}
+
+# Rehash for everytime a new program
+# is installed
+
+_force_rehash() {
+  (( CURRENT == 1 )) && rehash
+  return 1	# Because we didn't really complete anything
+}
+
+# Auto-rehashing. Try command completion, if fails, rehash
+#function compctl_rehash { rehash; reply=() }
+#compctl -C -c + -K compctl_rehash + -c
+
+function ga() { git add $* }
+#function gs() { git status $* }
+function gp() { git push $* }
+function gpo() { git push origin master $* }
+function gc() { git commit -m "$*" }
+function gca() { git commit -am "$*" }
+function gpl() { git pull origin $* }
+
+function fid()
+{
+  numargs=$#
+
+  if [ $numargs -lt 1 ]
+  then 
+    echo "Nothing to search for"
+    return 1
+  fi
+
+  if [ $numargs -lt 2 ]
+  then 
+    find ./ -iname "*$**" 
+    return 0
+  fi
+
+  if [ $numargs -lt 3 ]
+  then 
+    find $1 -iname "*$2*"
+    return 0
+  fi
+}
+
+function wiki() 
+{ 
+     numargs=$# 
+  
+     if [ $numargs -lt 1 ] 
+     then 
+         echo "Usage: $0 Your Wikipedia Query" 
+         echo "Ex: $0 linux" 
+         echo "Ex: $0 \"linux kernel" 
+         echo "Quotes only necessary if you use apostrophes, etc" 
+        return 1 
+     fi 
+  
+     if [ $numargs -gt 1 ] 
+     then 
+         args=`echo $args|sed 's/ /_/g'` 
+     fi 
+  
+     echo 
+  
+     args="$@" 
+     wget=/usr/bin/wget 
+     pager=/usr/bin/most 
+  
+     $wget -nv -O - "http://en.wikipedia.org/wiki/${args}" 2>&1|grep -i "Wikipedia does not have an article with this exact name" >/dev/null 2>&1 
+  
+     anygood=$? 
+  
+     if [ $anygood -eq 0 ] 
+         then 
+         args=`echo $args|sed 's/%20/ /g'` 
+         echo "No results found for $args" 
+         return 2 
+     fi 
+  
+     $wget -nv -O - "http://en.wikipedia.org/wiki/${args}" 2>&1 | sed -e :a -e 's/<[^>]*>/ /g;/</N;//ba' | sed -e '1,/Jump to:/d' -e '/^$/N;/\n$/N;//D' -e '/^.*[.*edit.*].*See also.*$/,$d' -e '/This *disambiguation *page/,$d' -e '/^$/N;/\n$/D' | $pager 
+}

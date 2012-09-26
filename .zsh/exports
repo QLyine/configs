@@ -1,0 +1,67 @@
+# Exports
+export HOSTTYPE="$(uname -m)"
+export COLORTERM=yes
+export LINKS_XTERM=screen
+export MAILDIR=$HOME/.mail/
+export MAIL=$MAILDIR
+export MAILCHECK=0
+export CC=gcc
+export MANPAGER="most"
+export PAGER=less
+export EDITOR=vim
+export BROWSER="firefox"
+export PDFVIEW=zathura
+export PICVIEW=feh
+export ECLIPSE_HOME="/usr/share/eclipse"
+
+export CHROOT="/chroot/named"
+
+export SDL_AUDIODRIVER="alsa"
+#export LS_COLORS='no=00:fi=00:di=01;33:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jpg=01;35:*.png=01;35:*.gif=01;35:*.bmp=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.png=01;35:*.mpg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:';
+
+# Add my stuff to $PATH
+export PATH=/usr/share/perl5/vendor_perl/auto/share/dist/Cope:$PATH:"$HOME/src/bin/":"$HOME/src/git-wt/bin/"
+ 
+# Fixes Savage mouse problems.
+export SDL_VIDEO_X11_DGAMOUSE=0
+ 
+# Fixes java problems in dwm
+#export AWT_TOOLKIT=MToolkit
+ 
+# Fix sound in SDL apps
+export SDL_AUDIODRIVER="dma"
+ 
+# ack color
+export ACK_COLOR_MATCH="red"
+ 
+# Fix OpenOffice.org widgets
+export OOO_FORCE_DESKTOP=gnomea
+
+# Dircolors
+eval "$(dircolors -b $HOME/.dir_colors)"
+
+
+# In case GTK+ doesn't use XFT, force it.
+export GDK_USE_XFT=true
+
+# Same for QT.
+export QT_XFT=true
+
+
+#zle-keymap-select () {
+#    if [ $TERM = "rxvt-256color" ]; then
+#        if [ $KEYMAP = vicmd ]; then
+#            echo -ne "\033]12;orange\007"
+#        else
+#            echo -ne "\033]12;#B03060\007"
+#        fi
+#    fi
+#}
+#zle -N zle-keymap-select
+#zle-line-init () {
+#    zle -K viins
+#    if [ $TERM = "rxvt-256color" ]; then
+#        echo -ne "\033]12;#B03060\007"
+#    fi
+#}
+#zle -N zle-line-init
