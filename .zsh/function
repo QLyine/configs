@@ -61,7 +61,7 @@ _force_rehash() {
 function ga() { git add $* }
 #function gs() { git status $* }
 function gp() { git push $* }
-function gpo() { git push origin master $* }
+function gpo() { git push origin $* }
 function gc() { git commit -m "$*" }
 function gca() { git commit -am "$*" }
 function gpl() { git pull origin $* }

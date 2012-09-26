@@ -47,21 +47,3 @@ export GDK_USE_XFT=true
 # Same for QT.
 export QT_XFT=true
 
-
-#zle-keymap-select () {
-#    if [ $TERM = "rxvt-256color" ]; then
-#        if [ $KEYMAP = vicmd ]; then
-#            echo -ne "\033]12;orange\007"
-#        else
-#            echo -ne "\033]12;#B03060\007"
-#        fi
-#    fi
-#}
-#zle -N zle-keymap-select
-#zle-line-init () {
-#    zle -K viins
-#    if [ $TERM = "rxvt-256color" ]; then
-#        echo -ne "\033]12;#B03060\007"
-#    fi
-#}
-#zle -N zle-line-init
