@@ -1,0 +1,22 @@
+background no
+out_to_console true
+update_interval 1
+total_run_times 0
+uppercase no
+use_spacer true
+
+TEXT
+${execi 15 python /home/qlyine/.scripts/mailNotify.py} · \
+${execi 1 bash /home/qlyine/.scripts/volume.sh} ^fg(white)${mixer}% · \
+^fg(green3)^i(/home/qlyine/.icons/dzen_bitmaps3/phones.xbm) ^fg(white)${mpd_smart} · \
+${if_match ${battery_percent BAT0} > 20}\
+^fg(green3)^i(/home/qlyine/.icons/dzen_bitmaps3/bat_full_02.xbm)\
+${endif}\
+${if_match ${battery_percent BAT0} <= 20} \
+^fg(orange2)^i(/home/qlyine/.icons/dzen_bitmaps3/bat_low_02.xbm)\
+${endif} \
+${if_match ${battery_percent BAT0} <= 8} \
+^fg(red2)^i(/home/qlyine/.icons/dzen_bitmaps3/bat_empty_02.xbm)\
+${endif}\
+^fg(white)${battery_percent BAT0}% · \
+^fg(green3)^i(/home/qlyine/.icons/dzen_bitmaps3/clock.xbm)^fg(white) ${time %a %d %H:%M} 
