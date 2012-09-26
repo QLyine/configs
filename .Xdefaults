@@ -1,0 +1,181 @@
+! .Xdefaults
+
+! Xcursor --------------------------------------------------------------------
+
+Xcursor.theme: jimmac
+
+! Xft font settings -----------------------------------------------------------
+
+Xft.dpi:        102
+Xft.antialias:  1
+Xft.hinting:    1
+Xft.autohint:   0
+Xft.hintstyle:  hintfull
+!Xft.hintstyle:  hintslisght
+Xft.lcdfilter:  lcddefault
+Xft.rgba:       rgb 
+ 
+
+! URxvt settings --------------------------------------------------------------
+!URxvt.termName:         rxvt-256color
+URxvt.termName:         rxvt-unicode-256color
+URxvt.scrollTtyOutput:  false
+URxvt.scrollTtyKeypress:false
+URxvt.loginShell:       true
+!URxvt.cursorColor:      #B03060
+URxvt.colorUL:          #84B5C1
+URxvt.pointerBlank:     true
+URxvt.visualBell:       false 
+URxvt.fading:           10
+URxvt.scrollBar:        false
+URxvt.saveLines:        10000
+URxvt.tintColor:        grey80
+!urxvt*geometry:         84x26
+URxvt.depth:            32
+
+! fonts 
+
+!urxvt.font:xft:Dina:pixelsize=10
+!urxvt.boldFont:xft:Dina:pixelsize=10
+
+!urxvt.font:xft:Dina:pixelsize=13:antialias=true:autohint=true:hinting=true:dpi=128
+!urxvt.boldFont:xft:Dina:pixelsize=13:antialias=true:autohint=true:hinting=true:dpi=128
+
+!urxvt.font:xft:Inconsolata:Medium:pixelsize=11
+!urxvt.boldFont:xft:Inconsolata:Medium:pixelsize=11
+
+!urxvt.font:xft:Monaco:Regular:pixelsize=11
+!urxvt.boldFont:xft:Monaco:Regular:pixelsize=11
+
+URxvt.font:xft:Envy Code R:Regular:pixelsize=11
+URxvt.boldFont:xft:Envy Code R:Regular:pixelsize=11
+
+!urxvt.font:xft:Anonymous Pro:Regular:pixelsize=12
+!urxvt.boldFont:xft:Anonymous Pro:Regular:pixelsize=12
+
+!urxvt.font:xft:Droid Sans:Regular:pixelsize=10
+!urxvt.boldFont:xft:Droid Sans Mono:Regular:pixelsize=10
+
+!urxvt.font:xft:MonteCarlo:Sans:pixelsize=11
+!urxvt.boldFont:xft:MonteCarlo:Sans:pixelsize=11
+
+!urxvt.font:xft:Terminus:pixelsize=13:antialias=true:autohint=true:hinting=true:dpi=128
+!urxvt.font:xft:Liberation Sans:pixelsize=15:antialias=true:autohint=true:hinting=true:dpi=128
+!urxvt.font:xft:Profont:pixelsize=15:antialias=true:autohint=true:hinting=true:dpi=128
+!urxvt.font:xft:Monaco:pixelsize=12:antialias=true:autohint=true:hinting=true:dpi=128
+
+! perl
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+URxvt.perl-ext-common: default,matcher,searchable-scrollback
+ 
+! url launchable
+URxvt.urlLauncher: /usr/bin/firefox
+URxvt.matcher.button: 1
+
+URxvt.matcher.pattern.1: \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvt.keysym.C-u: perl:matcher
+URxvt.cutchars: "()*,<>[]{}|'
+
+! terminal colors ------------------------------------------------------------
+
+! force default BG & FG
+!URxvt.background:    [90]#0c0c0c
+!URxvt.foreground:	#ffffff
+
+!#include "/home/qlyine/.colorscheme/nu"
+!#include "/home/qlyine/.colorscheme/molokai_v2"
+!#include "/home/qlyine/.colorscheme/orange"
+#include "/home/qlyine/.colorscheme/marzo"
+!#include "/home/qlyine/.colorscheme/cloudef"
+!#include "/home/qlyine/.colorscheme/reach"
+!#include "/home/qlyine/.colorscheme/sicp"
+!#include "/home/qlyine/.colorscheme/justin"
+!#include "/home/qlyine/.colorscheme/arthur"
+!#include "/home/qlyine/.colorscheme/warm"
+!#include "/home/qlyine/.colorscheme/neon"
+!#include "/home/qlyine/.colorscheme/getfresh"
+!#include "/home/qlyine/.colorscheme/samtole40"
+!#include "/home/qlyine/.colorscheme/zenburn"
+
+! force default BG & FG
+!*background:    [90]#0c0c0c
+!*foreground:	#ffffff
+
+
+! Xterm Settings
+xterm*faceName: Bitstream Vera Sans Mono
+xterm*faceSize: 10
+xterm*eightBitInput: false
+XTerm*metaSendsEscape: true
+xterm*boldMode: off
+xterm*scrollBar: false
+xterm*saveLines: 1000
+xterm*Foreground: #cccccc
+xterm*Background: #0d0d0d
+xterm*Border: #303430
+xterm*TitleBar: on
+xterm*TextUnderIcon: on
+xterm*AllowIconInput: on
+xterm*AutoRaise: on
+xterm*termtype: vt100
+xterm*ttyModes: intr ^c erase ^h susp ^@ dsusp ^@ kill ^u eof ^d
+xterm*jumpScroll: true
+xterm*multiScroll: true
+xterm*backarrowKey: false
+XTerm*cutNewline: False
+XTerm*loginShell: true
+
+
+!-------------------------------------------------------------------------------
+!
+!	X F O N T S E L - Setting
+!
+!
+!XFontSel*sampleText.background: TEXTBG
+XFontSel*menu*showUnselectable: false
+XFontSel*MenuButton.shadowWidth: 0
+XFontsel*Toggle*ToggleStyle: check
+XFontsel*MenuButton*Justify:    left
+XFontsel*MenuButton*MenuButtonStyle: select
+.xfontsel.pane.commandBox.quitButton.background: #777777
+.xfontsel.pane.commandBox.quitButton.foreground: snow
+.xfontsel.pane.commandBox.ownButton.background: orange3
+.xfontsel.pane.commandBox.ownButton.foreground: snow
+.xfontsel.pane.commandBox.countLabel.background: snow
+.xfontsel.pane.viewPort.sampleText.background: #777777
+.xfontsel.pane.viewPort.sampleText.foreground: snow
+.xfontsel.pane.fieldBox.field0.background: #777777
+.xfontsel.pane.fieldBox.field0.foreground: snow
+.xfontsel.pane.fieldBox.field1.background: #777777
+.xfontsel.pane.fieldBox.field1.foreground: snow
+.xfontsel.pane.fieldBox.field2.background: #777777
+.xfontsel.pane.fieldBox.field2.foreground: snow
+.xfontsel.pane.fieldBox.field3.background: #777777
+.xfontsel.pane.fieldBox.field3.foreground: snow
+.xfontsel.pane.fieldBox.field4.background: #777777
+.xfontsel.pane.fieldBox.field4.foreground: snow
+.xfontsel.pane.fieldBox.field5.background: #777777
+.xfontsel.pane.fieldBox.field5.foreground: snow
+.xfontsel.pane.fieldBox.field6.background: #777777
+.xfontsel.pane.fieldBox.field6.foreground: snow
+.xfontsel.pane.fieldBox.field7.background: #777777
+.xfontsel.pane.fieldBox.field7.foreground: snow
+.xfontsel.pane.fieldBox.field8.background: #777777
+.xfontsel.pane.fieldBox.field8.foreground: snow
+.xfontsel.pane.fieldBox.field9.background: #777777
+.xfontsel.pane.fieldBox.field9.foreground: snow
+.xfontsel.pane.fieldBox.field10.background: #777777
+.xfontsel.pane.fieldBox.field10.foreground: snow
+.xfontsel.pane.fieldBox.field11.background: #777777
+.xfontsel.pane.fieldBox.field11.foreground: snow
+.xfontsel.pane.fieldBox.field12.background: #777777
+.xfontsel.pane.fieldBox.field12.foreground: snow
+.xfontsel.pane.fieldBox.field13.background: #777777
+.xfontsel.pane.fieldBox.field13.foreground: snow
+.xfontsel.pane.fieldBox*foreground: #000000
+.xfontsel.pane.fieldBox.MenuButton.borderWidth: 1
+.xfontsel.pane.fieldBox.MenuButton.internalHeight: 1
+.xfontsel.pane.fieldBox.MenuButton.internalWidth: 2
+.xfontsel.pane.fieldBox.MenuButton.shapeStyle: rectangle
+
+
